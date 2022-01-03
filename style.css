@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 144rem;
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: #0d192b;
+}
+
+/**********************/
+/*     GENERAL       */
+/**********************/
+
+.card-text,
+.about-time,
+.about-author {
+  color: #bbb;
+}
+
+.container {
+  width: 20rem;
+}
+
+.nft-container {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 1.6rem;
+  border-radius: 0.9rem;
+  background-color: #14253d;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.nft-card-box {
+  position: relative;
+}
+
+.card-img {
+  max-width: 100%;
+  border-radius: 0.9rem;
+}
+
+.nft--card-img:hover::before {
+  content: "";
+  display: block;
+  background-image: url("/images/icon-view.svg");
+  background-size: cover;
+  width: 3.2rem;
+  height: 3.2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.nft--card-img:hover::after {
+  content: "";
+  display: block;
+  /* width: 100%; */
+  height: 16.75rem;
+  width: 16.75rem;
+  background-color: rgba(0, 255, 247, 0.603);
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nft--card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.heading-primary-link:link,
+.heading-primary-link:visited {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.heading-primary-link:hover,
+.heading-primary-link:active {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.card-text-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text-info-1,
+.card-text-info-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.about-eth {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.about-eth,
+.about-time,
+.about-author {
+  font-size: 1rem;
+}
+
+.nft--card-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid rgba(170, 170, 170, 0.479);
+  padding-top: 1.6rem;
+}
+
+.author-img {
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.author-link:link,
+.author-link:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.author-link:hover,
+.author-link:active {
+  cursor: pointer;
+  color: #00fff7;
+}
