@@ -51,7 +51,7 @@ body {
 .nft--card-img:hover::before {
   content: "";
   display: block;
-  background-image: url("../images/icon-view.svg");
+  background-image: url(".../images/icon-view.svg");
   background-size: cover;
   width: 3.2rem;
   height: 3.2rem;
